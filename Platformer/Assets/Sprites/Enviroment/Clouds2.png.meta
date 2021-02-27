@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-guid: 2fdbeba140c13164eba0aa2f94807328
+guid: 2e585a7fe802dd5449f8ceec4c054c9d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8509550459451208454
-    second: WaterCor_Left
+      213: 3719681914668549795
+    second: Clouds3_Left
   - first:
-      213: 3559705528278350927
-    second: WaterC_1
+      213: 7902441131090122373
+    second: Clouds3_M1
   - first:
-      213: 6049605792901559095
-    second: WaterC_1
+      213: -4531161222656314196
+    second: Clouds3_M2
   - first:
-      213: -5882170695943828418
-    second: WaterC_2
+      213: -3913596140653326087
+    second: Clouds3_M3
   - first:
-      213: 7591774343886807129
-    second: WaterC_3
+      213: 3624604430652784724
+    second: Clouds3_Right
   - first:
-      213: 8088830456793213489
-    second: WaterCor_Right
-  - first:
-      213: 4177692092066526168
-    second: WaterWhole
+      213: -4345943878540487376
+    second: Clouds3_Whole
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -112,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WaterCor_Left
+      name: Clouds3_Left
       rect:
         serializedVersion: 2
         x: 0
@@ -126,14 +123,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 603f9ddae0ff71670800000000000000
-      internalID: 8509550459451208454
+      spriteID: 3a683416ef6fe9330800000000000000
+      internalID: 3719681914668549795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WaterC_1
+      name: Clouds3_M1
       rect:
         serializedVersion: 2
         x: 16
@@ -147,14 +144,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 733fa0d9a6484f350800000000000000
-      internalID: 6049605792901559095
+      spriteID: 586101df65c1bad60800000000000000
+      internalID: 7902441131090122373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WaterC_2
+      name: Clouds3_M2
       rect:
         serializedVersion: 2
         x: 32
@@ -168,14 +165,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3c4e08cae45e5ea0800000000000000
-      internalID: -5882170695943828418
+      spriteID: ca4bb8700e41e11c0800000000000000
+      internalID: -4531161222656314196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WaterC_3
+      name: Clouds3_M3
       rect:
         serializedVersion: 2
         x: 48
@@ -189,14 +186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9502c46fa866b5960800000000000000
-      internalID: 7591774343886807129
+      spriteID: 9f0d4029b0d10b9c0800000000000000
+      internalID: -3913596140653326087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WaterCor_Right
+      name: Clouds3_Right
       rect:
         serializedVersion: 2
         x: 64
@@ -210,29 +207,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13a2589a17c414070800000000000000
-      internalID: 8088830456793213489
+      spriteID: 450cd54968e2d4230800000000000000
+      internalID: 3624604430652784724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WaterWhole
+      name: Clouds3_Whole
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 80
         height: 16
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d37598c2d42af930800000000000000
-      internalID: 4177692092066526168
+      spriteID: 0359fc9711b10b3c0800000000000000
+      internalID: -4345943878540487376
       vertices: []
       indices: 
       edges: []
