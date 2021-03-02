@@ -17,6 +17,13 @@ public class MovementControl : MonoBehaviour
     }
 
     // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            Spinning = !Spinning;
+        }
+    }
     void FixedUpdate()
     {
         MoveJuice = Input.GetAxis("Move");
@@ -32,14 +39,7 @@ public class MovementControl : MonoBehaviour
     }
     void Speedup() // Speeds up the character according to user input
     {
-        if (!Spinning)
-        {
-            rb.AddForce(Vector3.right * MoveJuice * Acceleration, ForceMode2D.Force);
-        }
-        else
-        {
-            rb.AddForce(Vector3.right * MoveJuice * Acceleration, ForceMode2D.Force);
-        }
+        rb.AddForce(Vector3.right * MoveJuice * Acceleration, ForceMode2D.Force);
     }
     void TerminalRun() // Slows down the character to "MaxRun" if they pass its value, limiting the character's horizontal movement to that speed cap in either direction
     {
