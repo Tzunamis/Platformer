@@ -48,7 +48,7 @@ public class JumpControl : MonoBehaviour
             rb.AddForce(Vector2.up * JumpPower, ForceMode2D.Impulse);
         }
     }
-    void JumpCheck() // Counts how long the player is not moving on the y-axis. If they are static for 5 frames, it is assumed they are grounded and so their jump is replenished.
+    void JumpCheck() // Counts how long the player is not moving on the y-axis. If they are static on the y-axis for 5 frames, it is assumed they are grounded and so their jump is replenished.
     {
         if (rb.velocity.y == 0 && !CanJump)
         {

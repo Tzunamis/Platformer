@@ -7,7 +7,7 @@ public class BallBuster : MonoBehaviour
    Rigidbody2D rb;
     void Start()
     {
-       rb = GetComponent<Rigidbody2D>();
+       rb = GameObject.Find("ScoreKeeper").GetComponent<Rigidbody2D>();
     }
     void OnCollisionEnter2D(Collision2D marble)
     {

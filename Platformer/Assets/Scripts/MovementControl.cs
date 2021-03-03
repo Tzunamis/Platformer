@@ -20,8 +20,6 @@ public class MovementControl : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         JC = GetComponent<JumpControl>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
