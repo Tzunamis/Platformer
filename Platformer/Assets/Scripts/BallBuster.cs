@@ -11,7 +11,7 @@ public class BallBuster : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D marble)
     {
-        if (marble.gameObject.name == "Marble")
+        if (marble.gameObject.tag == "marble")
         {
             rb.constraints = RigidbodyConstraints2D.None;
         }
