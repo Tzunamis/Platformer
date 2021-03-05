@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallBuster : MonoBehaviour
 {
-   Rigidbody2D rb;
+    Rigidbody2D rb;
     void Start()
     {
        rb = gameObject.GetComponent<Rigidbody2D>();
