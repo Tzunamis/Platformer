@@ -13981,11 +13981,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1299382840145297950, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 248.37
+      value: 254.413
       objectReference: {fileID: 0}
     - target: {fileID: 1299382840145297950, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.15
+      value: 0.094
       objectReference: {fileID: 0}
     - target: {fileID: 1299382840145297950, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14021,11 +14021,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: MaxLeft
-      value: 172.5
+      value: 248
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: MaxRight
-      value: 185.5
+      value: 254
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: WalkSpeed
@@ -20129,7 +20129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1299382840145297950, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 293.67
+      value: 288.75
       objectReference: {fileID: 0}
     - target: {fileID: 1299382840145297950, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20169,11 +20169,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: MaxLeft
-      value: 172.5
+      value: 289
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: MaxRight
-      value: 185.5
+      value: 295
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: WalkSpeed
@@ -31174,7 +31174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1299382840145297950, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 235.64
+      value: 235.84
       objectReference: {fileID: 0}
     - target: {fileID: 1299382840145297950, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31214,11 +31214,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: MaxLeft
-      value: 172.5
+      value: 230
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: MaxRight
-      value: 185.5
+      value: 235
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: WalkSpeed
@@ -47529,6 +47529,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 2801296649808018497, guid: ee81e716ba0dbfa4092d76e9e8513d11, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2801296649808018497, guid: ee81e716ba0dbfa4092d76e9e8513d11, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1455712831
+      objectReference: {fileID: 0}
     - target: {fileID: 2801296649808018498, guid: ee81e716ba0dbfa4092d76e9e8513d11, type: 3}
       propertyPath: m_Name
       value: Nuke (1)
@@ -48665,11 +48673,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1299382840145297950, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 265.87
+      value: 279.03
       objectReference: {fileID: 0}
     - target: {fileID: 1299382840145297950, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.03
+      value: -4.022
       objectReference: {fileID: 0}
     - target: {fileID: 1299382840145297950, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -48705,11 +48713,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: MaxLeft
-      value: 172.5
+      value: 266
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: MaxRight
-      value: 185.5
+      value: 279
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: WalkSpeed
@@ -60203,7 +60211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1299382840145297950, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 283.94
+      value: 283.81
       objectReference: {fileID: 0}
     - target: {fileID: 1299382840145297950, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -60243,11 +60251,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: MaxLeft
-      value: 172.5
+      value: 284
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: MaxRight
-      value: 185.5
+      value: 289
       objectReference: {fileID: 0}
     - target: {fileID: 7139092853969459484, guid: 4a6d4783f283c6949bf71bf8f58edc9f, type: 3}
       propertyPath: WalkSpeed
