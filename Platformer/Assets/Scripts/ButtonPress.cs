@@ -87,11 +87,11 @@ public class ButtonPress : MonoBehaviour
         {
             Camera.transform.position = new Vector3(Camera.transform.position.x, Camera.transform.position.y + 0.1f, Camera.transform.position.z);
         }
-        /*if (Camera.transform.position.x > Nuke.transform.position.x)
+        if (Camera.transform.position.x > Nuke.transform.position.x)
         {
             Camera.transform.position = new Vector3(Camera.transform.position.x - 0.1f, Camera.transform.position.y, Camera.transform.position.z);
         }
-        if (Camera.transform.position.y > Nuke.transform.position.y)
+        /*if (Camera.transform.position.y > Nuke.transform.position.y)
         {
             Camera.transform.position = new Vector3(Camera.transform.position.x, Camera.transform.position.y - 0.1f, Camera.transform.position.z);
         }*/

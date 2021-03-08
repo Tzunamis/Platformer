@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuUI : MonoBehaviour
 {
     public GameObject Menu;
-    void Start()
+    void Awake()
     {
         Time.timeScale = 0;
     }
