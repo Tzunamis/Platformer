@@ -10,6 +10,8 @@ public class JumpControl : MonoBehaviour
     float JumpJuice;
     public bool CanJump;
     public float JumpPower;
+    public bool isJumping;
+    public bool isFalling;
     bool Spinning;
     int JumpCheckCounter;
     MovementControl MC;
@@ -24,6 +26,22 @@ public class JumpControl : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!CanJump && rb.velocity.y > 0)
+        {
+            isJumping = true;
+        }
+        else
+        {
+            isJumping = false;
+        }
+        if (!CanJump && rb.velocity.y < 0)
+        {
+            isFalling = true;
+        }
+        else
+        {
+            isFalling = false;
+        }
         Spinning = MC.Spinning;
         JumpCheck();
         JumpJuice = Input.GetAxisRaw("Vertical");

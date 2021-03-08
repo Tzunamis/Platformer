@@ -13,6 +13,8 @@ public class MovementControl : MonoBehaviour
     float MoveJuice;
     public bool Spinning;
     float MovePower;
+    public bool MovingLeft;
+    public bool MovingRight;
     JumpControl JC;
     ButtonPress BP;
     void Start()
@@ -24,6 +26,22 @@ public class MovementControl : MonoBehaviour
     }
     void Update()
     {
+        if(rb.velocity.x > 0)
+        {
+            MovingRight = true;
+        }
+        else
+        {
+            MovingRight = false;
+        }
+        if (rb.velocity.x < 0)
+        {
+            MovingLeft = true;
+        }
+        else
+        {
+            MovingLeft = false;
+        }
         if (Input.GetKeyDown(KeyCode.LeftShift) && BP.InputEnabled)
         {
             Spinning = !Spinning;
