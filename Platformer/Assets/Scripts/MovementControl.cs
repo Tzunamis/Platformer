@@ -5,6 +5,8 @@ using UnityEngine;
 public class MovementControl : MonoBehaviour
 {
     Rigidbody2D rb;
+
+    public Animator anim;
     public float TerminalRun;
     public float spinTerminalMultiplier;
     public float Acceleration;
@@ -20,12 +22,17 @@ public class MovementControl : MonoBehaviour
     void Start()
     {
         Spinning = false;
+        anim = GetComponent<Animator>();
+
         rb = GetComponent<Rigidbody2D>();
         JC = GetComponent<JumpControl>();
         BP = GameObject.Find("LAUNCH NUKE!").GetComponent<ButtonPress>();
     }
+
     void Update()
     {
+
+        anim.SetFloat("Move", Input.GetAxis("Move"));
         if(rb.velocity.x > 0)
         {
             MovingRight = true;

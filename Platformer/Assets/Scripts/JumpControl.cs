@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class JumpControl : MonoBehaviour
 {
+    public Animator anim;
     Rigidbody2D rb;
     public float TerminalVelocity;
     public float SpinJumpMultiplier;
@@ -19,6 +20,7 @@ public class JumpControl : MonoBehaviour
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         MC = GetComponent<MovementControl>();
         rb = GetComponent<Rigidbody2D>();
         BP = GameObject.Find("LAUNCH NUKE!").GetComponent<ButtonPress>();
@@ -26,6 +28,7 @@ public class JumpControl : MonoBehaviour
 
     void FixedUpdate()
     {
+        anim.SetFloat("Vertical", Input.GetAxis("Vertical"));
         if (!CanJump && rb.velocity.y > 0)
         {
             isJumping = true;

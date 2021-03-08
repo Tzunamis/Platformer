@@ -25166,6 +25166,7 @@ GameObject:
   - component: {fileID: 896838630}
   - component: {fileID: 896838628}
   - component: {fileID: 896838629}
+  - component: {fileID: 896838634}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -25185,6 +25186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5873553dedaae941b82ee34f21096cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 896838634}
   TerminalRun: 2.5
   spinTerminalMultiplier: 3
   Acceleration: 35
@@ -25205,6 +25207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64d3b9c1cda1b5c42b2f389c68617bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 896838634}
   TerminalVelocity: 10
   SpinJumpMultiplier: 0.6
   CanJump: 1
@@ -25323,6 +25326,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &896838634
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896838627}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c922a145c25ec9e47bec7d7dc9240b64, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &903125906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32894,6 +32916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5873553dedaae941b82ee34f21096cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   TerminalRun: 0
   spinTerminalMultiplier: 0
   Acceleration: 0
@@ -32914,6 +32937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64d3b9c1cda1b5c42b2f389c68617bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   TerminalVelocity: 10
   SpinJumpMultiplier: 0.6
   CanJump: 0
