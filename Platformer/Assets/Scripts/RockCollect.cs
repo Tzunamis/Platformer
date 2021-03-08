@@ -16,7 +16,6 @@ public class RockCollect : MonoBehaviour
         if(player.gameObject.name == "Player")
         {
             SK.RockCount++;
-            Debug.Log(SK.RockCount);
             Destroy(gameObject);
         }
     }

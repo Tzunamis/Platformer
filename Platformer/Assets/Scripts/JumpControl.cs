@@ -13,10 +13,13 @@ public class JumpControl : MonoBehaviour
     bool Spinning;
     int JumpCheckCounter;
     MovementControl MC;
+    ButtonPress BP;
+
     void Start()
     {
         MC = GetComponent<MovementControl>();
         rb = GetComponent<Rigidbody2D>();
+        BP = GameObject.Find("LAUNCH NUKE!").GetComponent<ButtonPress>();
     }
 
     void FixedUpdate()
@@ -24,7 +27,7 @@ public class JumpControl : MonoBehaviour
         Spinning = MC.Spinning;
         JumpCheck();
         JumpJuice = Input.GetAxisRaw("Vertical");
-        if (JumpJuice == 1 && CanJump)
+        if (JumpJuice == 1 && CanJump && BP.InputEnabled)
         {
             Jumpup();
         }

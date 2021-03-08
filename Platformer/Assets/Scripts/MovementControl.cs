@@ -14,15 +14,17 @@ public class MovementControl : MonoBehaviour
     public bool Spinning;
     float MovePower;
     JumpControl JC;
+    ButtonPress BP;
     void Start()
     {
         Spinning = false;
         rb = GetComponent<Rigidbody2D>();
         JC = GetComponent<JumpControl>();
+        BP = GameObject.Find("LAUNCH NUKE!").GetComponent<ButtonPress>();
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && BP.InputEnabled)
         {
             Spinning = !Spinning;
         }
@@ -30,7 +32,7 @@ public class MovementControl : MonoBehaviour
     void FixedUpdate()
     {
         MoveJuice = Input.GetAxis("Move");
-        if (MoveJuice != 0)
+        if (MoveJuice != 0 && BP.InputEnabled)
         {
             Speedup();
             SlowToMax();
