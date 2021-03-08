@@ -12464,7 +12464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ade557060980d9d48a3966db240fe2cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeSpeed: 0.001
+  FadeSpeed: 0.01
   LoadDistance: 5
   Gnome: {fileID: 896838627}
   Ball: {fileID: 719337095}
@@ -13449,11 +13449,11 @@ RectTransform:
   m_Father: {fileID: 791309155}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -95.4344}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 134}
   m_SizeDelta: {x: 962.3383, y: 69.131195}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &494655970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21783,7 +21783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -22753,9 +22753,9 @@ RectTransform:
   m_Father: {fileID: 1679915650}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -130}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 102}
   m_SizeDelta: {x: 962.3383, y: 69.131195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &825149570
@@ -25215,7 +25215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896838627}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.4, y: -3.38, z: 0}
+  m_LocalPosition: {x: -3.57, y: -3.4, z: 0}
   m_LocalScale: {x: 1, y: 0.8125, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -44834,7 +44834,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -14.1}
+  m_AnchoredPosition: {x: 0, y: -14.100006}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1520570091
@@ -49477,7 +49477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -63606,7 +63606,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -209.8, y: -86.7}
+  m_AnchoredPosition: {x: -209.79999, y: -86.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2077051011
@@ -66848,7 +66848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2801296649808018498, guid: ee81e716ba0dbfa4092d76e9e8513d11, type: 3}
       propertyPath: m_Name
-      value: Nuke
+      value: NukePrefab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee81e716ba0dbfa4092d76e9e8513d11, type: 3}
