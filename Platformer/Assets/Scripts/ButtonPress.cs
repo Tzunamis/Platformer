@@ -11,15 +11,15 @@ public class ButtonPress : MonoBehaviour
     bool DonePanning;
     GameObject Nuke;
     GameObject Camera;
+    public GameObject EndMenu;
     CameraControl CC;
     void Start()
     {
-        Nuke = GameObject.Find("Nuke (1)");
+        Nuke = GameObject.Find("Nuke");
         Camera = GameObject.Find("Main Camera");
         CC = Camera.GetComponent<CameraControl>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (ButtonPressed)
@@ -50,14 +50,15 @@ public class ButtonPress : MonoBehaviour
 
     void LaunchNuke()
     {
-        if(Nuke.transform.position.x >= 35)
+        if(Nuke.transform.position.y <= 50)
         {
             Nuke.transform.position = new Vector3(Nuke.transform.position.x, Nuke.transform.position.y + NukeSpeed, Nuke.transform.position.z);
             NukeSpeed *= 1.01f;
         }
         else
         {
-            Debug.Log("Game Won");
+            Time.timeScale = 0;
+            EndMenu.SetActive(true);
         }
     }
 
@@ -86,11 +87,11 @@ public class ButtonPress : MonoBehaviour
         {
             Camera.transform.position = new Vector3(Camera.transform.position.x, Camera.transform.position.y + 0.1f, Camera.transform.position.z);
         }
-        if (Camera.transform.position.x > Nuke.transform.position.x)
+        /*if (Camera.transform.position.x > Nuke.transform.position.x)
         {
             Camera.transform.position = new Vector3(Camera.transform.position.x - 0.1f, Camera.transform.position.y, Camera.transform.position.z);
         }
-        /*if (Camera.transform.position.y > Nuke.transform.position.y)
+        if (Camera.transform.position.y > Nuke.transform.position.y)
         {
             Camera.transform.position = new Vector3(Camera.transform.position.x, Camera.transform.position.y - 0.1f, Camera.transform.position.z);
         }*/
