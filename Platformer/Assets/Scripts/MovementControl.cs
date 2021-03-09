@@ -58,7 +58,7 @@ public class MovementControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && BP.InputEnabled)
         {
             Spinning = !Spinning;
-            anim.SetBool("Spinning", true);
+            anim.SetBool("Spinning", Spinning);
         }
         
     }
