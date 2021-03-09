@@ -33,15 +33,17 @@ public class MovementControl : MonoBehaviour
     void Update()
     {
 
-        anim.SetFloat("Move", Input.GetAxis("Move"));
+        
 
         if(rb.velocity.x != 0 && JC.CanJump == true)
         {
             isMoving = true;
+            anim.SetBool("isMoving", true);
         }
         else
         {
             isMoving = false;
+            anim.SetBool("isMoving", false);
         }
         if(rb.velocity.x > 0)
         {
@@ -56,7 +58,9 @@ public class MovementControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && BP.InputEnabled)
         {
             Spinning = !Spinning;
+            anim.SetBool("Spinning", true);
         }
+        
     }
     void FixedUpdate()
     {

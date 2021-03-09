@@ -28,22 +28,26 @@ public class JumpControl : MonoBehaviour
 
     void FixedUpdate()
     {
-        anim.SetFloat("Vertical", Input.GetAxis("Vertical"));
+        
         if (!CanJump && rb.velocity.y > 0)
         {
             isJumping = true;
+            anim.SetBool("isJumping", true);
         }
         else
         {
             isJumping = false;
+            anim.SetBool("isJumping", false);
         }
         if (!CanJump && rb.velocity.y < 0)
         {
             isFalling = true;
+            anim.SetBool("isFalling", true);
         }
         else
         {
             isFalling = false;
+            anim.SetBool("isFalling", false);
         }
         Spinning = MC.Spinning;
         JumpCheck();
