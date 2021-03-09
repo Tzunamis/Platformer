@@ -15,8 +15,7 @@ public class MovementControl : MonoBehaviour
     float MoveJuice;
     public bool Spinning;
     float MovePower;
-    public bool MovingLeft;
-    public bool MovingRight;
+    public bool isMoving;
     JumpControl JC;
     ButtonPress BP;
     SpriteRenderer SR;
@@ -35,17 +34,22 @@ public class MovementControl : MonoBehaviour
     {
 
         anim.SetFloat("Move", Input.GetAxis("Move"));
+
+        if(rb.velocity.x != 0 && JC.CanJump == true)
+        {
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
+        }
         if(rb.velocity.x > 0)
         {
-            MovingRight = true;
-            MovingLeft = false;
             SR.flipX = false;
         }
         
         if (rb.velocity.x < 0)
         {
-            MovingLeft = true;
-            MovingRight = false;
             SR.flipX = true;
         }
         
