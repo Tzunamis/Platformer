@@ -293,9 +293,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: Spinning
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: isMoving
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -8417162094635575173}
   m_Solo: 0
@@ -371,7 +368,6 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 7434373272702313522}
   - {fileID: 4782379494051366043}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
