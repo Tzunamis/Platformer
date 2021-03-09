@@ -19,11 +19,13 @@ public class MovementControl : MonoBehaviour
     public bool MovingRight;
     JumpControl JC;
     ButtonPress BP;
+    SpriteRenderer SR;
     void Start()
     {
         Spinning = false;
         anim = GetComponent<Animator>();
 
+        SR = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         JC = GetComponent<JumpControl>();
         BP = GameObject.Find("LAUNCH NUKE!").GetComponent<ButtonPress>();
@@ -36,19 +38,17 @@ public class MovementControl : MonoBehaviour
         if(rb.velocity.x > 0)
         {
             MovingRight = true;
+            MovingLeft = false;
+            SR.flipX = false;
         }
-        else
-        {
-            MovingRight = false;
-        }
+        
         if (rb.velocity.x < 0)
         {
             MovingLeft = true;
+            MovingRight = false;
+            SR.flipX = true;
         }
-        else
-        {
-            MovingLeft = false;
-        }
+        
         if (Input.GetKeyDown(KeyCode.LeftShift) && BP.InputEnabled)
         {
             Spinning = !Spinning;
